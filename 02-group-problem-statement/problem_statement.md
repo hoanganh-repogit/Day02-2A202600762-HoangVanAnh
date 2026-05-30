@@ -4,16 +4,16 @@
 
 | Cluster | Candidate examples | Pattern chung |
 |---|---|---|
-| Cam kết & theo dõi *(team process)* | PM commit deadline trước khi align eng; Dev lead OT không có plan/tracking; BA khai thác requirement chưa đủ rõ | Cam kết hoặc input đầu vào không được align & track rõ downstream (dev/QA) lãnh hậu quả |
-| Tổng hợp / tóm tắt | Check & Summarize Notifications; Review LAB Instruction | Đọc nhiều nội dung rồi nén lại để nắm nhanh |
-| Tìm thông tin rải rác | Slack Search; Tìm lịch/deadline trong nhiều group chat; Mỗi môn 1 platform nộp bài | Thông tin cần thì nằm rải ở nhiều nơi, khó tra đúng lúc |
+| Cam kết & theo dõi | PM commit deadline trước khi align eng; Dev leader không có plan/tracking; BA khai thác requirement chưa đủ rõ | Cam kết hoặc input đầu vào không được align & track rõ downstream (dev/QA) lãnh hậu quả |
+| Tổng hợp / tóm tắt | Check & Summarize Notifications; Write Lesson Notes; Review LAB Instruction | Đọc nhiều nội dung rồi nén lại để nắm nhanh |
+| Tìm thông tin rải rác | Tìm lịch/deadline trong nhiều group chat; Mỗi môn 1 platform nộp bài | Thông tin cần thì nằm rải ở nhiều nơi, khó tra đúng lúc |
 | Chuẩn hóa / định dạng tài liệu | Chỉnh format báo cáo Word theo chuẩn trường | Đã có nội dung nhưng phải sửa cho khớp một bộ chuẩn |
 
 ## Shortlist và score
 
 | Candidate | Actor rõ | Workflow rõ | Pain có evidence | Impact đo được | Làm trong lab | So sánh R/W/A được | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Chỉnh format Word theo chuẩn | 5 | 5 | 4 | 5 | 5 | 4 | 5 | **33** |
+| Chỉnh format Word theo chuẩn | 5 | 5 | 4 | 5 | 5 | 4 | 5 | 33 |
 | Check & Summarize Notifications | 5 | 5 | 4 | 4 | 4 | 4 | 5 | 31 |
 | Tìm lịch/deadline trong group chat | 5 | 4 | 4 | 4 | 3 | 4 | 5 | 29 |
 | Slack Search | 4 | 4 | 4 | 4 | 3 | 4 | 4 | 27 |
@@ -23,12 +23,12 @@ Nhóm chọn: **Chỉnh format báo cáo Word theo chuẩn trường.**
 Vì sao chọn:
 - **Workflow rõ nhất:** input (draft) + bộ chuẩn output đúng chuẩn. Không mơ hồ.
 - **Impact đo objective:** đếm được số lỗi format và thời gian sửa trước/sau, không phụ thuộc cảm tính.
-- **Data access đơn giản nhất:** chỉ cần 1 file Word + 1 bộ chuẩn. Không cần quyền truy cập Slack/LMS/nhiều nền tảng.
+- **Data access đơn giản nhất:** chỉ cần 1 file Word + 1 bộ chuẩn. Không cần quyền truy cập LMS/nhiều nền tảng.
 - **Before/after vẽ rất rõ:** dễ demo, dễ validate nhanh với bạn cùng lớp.
 
 Vì sao không chọn các bài khác:
 - **Summarize Notifications:** workflow rõ nhưng "summarize đủ tốt" là quality metric khó thống nhất trong thời gian lab.
-- **Slack Search / Tìm lịch trong group chat / multi-platform:** impact rộng nhưng đều vướng data access nhiều nguồn dễ trượt sang một hệ thống search/đồng bộ quá lớn so với phạm vi lab.
+- **Tìm lịch trong group chat / multi-platform:** impact rộng nhưng đều vướng data access nhiều nguồn dễ trượt sang một hệ thống search/đồng bộ quá lớn so với phạm vi lab.
 
 ## Quick validation
 
@@ -36,7 +36,7 @@ Nhóm hỏi nhanh 3 sinh viên/TA + mini poll trong lớp.
 
 | Nguồn | Số người | Tín hiệu xác nhận | Tín hiệu phản bác | Nhóm sửa problem thế nào |
 |---|---:|---|---|---|
-| Quick interview | 3 | 2/3 từng mất 1–2h chỉnh format ngay trước hạn nộp; đau nhất ở mục lục, heading, caption hình/bảng, trích dẫn | 1 người nói khoa họ có template sẵn nên gần như không đau | Thu hẹp: không phải "auto-format mọi loại doc", mà "đối chiếu draft với **một** bộ chuẩn cụ thể" |
+| Quick interview | 3 | 2/3 từng mất 1–2h chỉnh format ngay trước hạn nộp; đau nhất ở mục lục, heading, caption hình/bảng, trích dẫn | 1 người nói khoa họ có template sẵn nên gần như không đau | Thu hẹp: không phải "auto-format mọi loại doc", mà "đối chiếu draft với một bộ chuẩn cụ thể" |
 | Mini poll trong lớp | 8 | 5/8 từng bị trả lại / trừ điểm vì sai format | Vài người nói chỉ cần một template chuẩn là đủ, chưa cần AI | Thêm non-AI alternative để so sánh: template + style guide |
 
 Insight sau validation:
@@ -58,7 +58,7 @@ và là chỗ AI có giá trị thật.
 | **Grammarly / LanguageTool (Word add-in)** ([grammarly.com](https://www.grammarly.com/office-addin)) | Kiểm tra lỗi ngôn ngữ trong báo cáo; một phần check consistency | Inline trong Word, dễ tiếp cận cho sinh viên. LanguageTool có hỗ trợ tiếng Việt cơ bản. | Không check format theo chuẩn trường (font, margin, heading). Chỉ giải quyết grammar/spelling, không phải layout. | Input bổ trợ tốt cho chất lượng văn bản, không phải giải pháp format. Dùng song song, không thay thế tool format. |
 | **Docxtools / FormatMatch (Word add-in)** ([appsource.microsoft.com](https://appsource.microsoft.com/en-us/marketplace/apps?product=office%3Bword&page=1)) | Add-in Word cho phép compare style của file hiện tại với template chuẩn, highlight chỗ sai | Sinh viên thấy ngay chỗ sai trong Word mà không cần export/upload đâu cả. Visual feedback rõ ràng. | Phụ thuộc vào chất lượng add-in bên thứ ba; phí license nếu dùng ở cấp độ trường lớn. Cần test kỹ với template của trường. | Pattern tốt: detect lỗi inline ngay trong Word thay vì sau khi nộp. Nên pilot với 1 lớp trước khi rollout toàn trường. |
 | **Claude / GPT-4o (AI assistant)** ([claude.ai](https://claude.ai)) | Upload file `.docx` AI check format theo rubric trường, liệt kê lỗi cụ thể, gợi ý sửa | Linh hoạt, không cần cài thêm gì. Hiểu ngữ nghĩa quy định (ví dụ: "heading cấp 1 cần in đậm, cỡ 14") và áp dụng đúng. | Không tự sửa file trực tiếp (chỉ gợi ý). Kết quả phụ thuộc vào prompt chất lượng. Cần người thật review output trước khi nộp. | Dùng làm bước pre-check cho sinh viên: upload -> nhận checklist lỗi -> tự sửa. AI draft checklist, người thật confirm. Không nên dùng để tự động phê duyệt. |
-| **SharePoint / Google Drive + template link** ([microsoft.com/sharepoint](https://support.microsoft.com/sharepoint)) | Phân phối template chuẩn; sinh viên luôn mở đúng version mới nhất từ link trường cấp | Version control tốt: trường cập nhật template 1 lần, toàn bộ sinh viên nhận ngay. Không lo dùng template cũ. | Chỉ giải quyết khâu phân phối, không check xem sinh viên có dùng đúng không. Cần kết hợp với tool check format. | Bước hạ tầng cần thiết. Nên kết hợp: SharePoint cung cấp template → python-docx/macro check format khi nộp. Hai bước bổ trợ nhau. |
+| **SharePoint / Google Drive + template link** ([microsoft.com/sharepoint](https://support.microsoft.com/sharepoint)) | Phân phối template chuẩn; sinh viên luôn mở đúng version mới nhất từ link trường cấp | Version control tốt: trường cập nhật template 1 lần, toàn bộ sinh viên nhận ngay. Không lo dùng template cũ. | Chỉ giải quyết khâu phân phối, không check xem sinh viên có dùng đúng không. Cần kết hợp với tool check format. | Bước hạ tầng cần thiết. Nên kết hợp: SharePoint cung cấp template -> python-docx/macro check format khi nộp. Hai bước bổ trợ nhau. |
  
 Không có tool nào "all-in-one". Stack thực tế gợi ý:
  
